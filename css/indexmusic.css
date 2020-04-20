@@ -1,4 +1,20 @@
-
+body{
+    font-family: 'Comic Sans MS', sans-serif;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: rgb(163, 163, 159);
+}
+h2{
+    font-family: 'Comic Sans MS', sans-serif;
+    color: rgb(201, 92, 53);
+    font-weight: normal;
+    font-size: 45px
+}
+h1{
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: normal;
+    color: rgb(201, 92, 53) ;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6,4 +22,9 @@
 .image{
     width: 410px;
     height: 240px;
+}
+h3{
+font-weight: normal;
+font-size: x-large;
+color: royalblue;
 }
