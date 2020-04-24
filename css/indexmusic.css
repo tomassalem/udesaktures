@@ -1,14 +1,18 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../css/Imagenes/rojo.jpg);
+    padding: 0;
+    margin: 0;
 }
 h1{
     font-family: sans-serif;
     font-weight: bold;
-    color: cornsilk;
+    color: black;
     font-size: 50px;
     text-align: center;
     
@@ -58,7 +62,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    width: 100vw;
+    width: 100%;
     gap: 20px;
    background-color: rgba(70, 66, 66, 0.4);
     padding-top: 30px;
@@ -66,7 +70,6 @@ h4{
 }
 .imagen {
     width: 350px;
-    height: 350px;
 }
 .logo {
     width: 200px;
@@ -76,7 +79,7 @@ h4{
     display: block;
 }
 footer{
-         width: 100vw;
+         width: 100%;
         display: flex;
         justify-content: space-evenly;
         background-color: rgba(0, 0, 0, 0.5);
@@ -92,4 +95,7 @@ p{
 .deezer{
     height: 100px;
     margin-bottom: 20px;
+}
+.imglogo{
+    height: 80px;
 }
