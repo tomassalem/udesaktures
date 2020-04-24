@@ -1,13 +1,17 @@
 .li-black {
     color:cornsilk;
+    font-size: large;
   }
   
   .barra-navegacion {
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
     position: relative;
-    top:0;
-    left:0;
-    z-index: 10;
+    width: 100vw;
+    text-align: justify;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px;
     overflow: hidden;
   }
   
@@ -41,8 +45,9 @@
     border-radius: 15px;
   }
   .uk-search {
-  margin-top: 20px;
-  margin-left: 10px;
+  overflow: hidden;
+  padding:8px 15px;
+
   }
   
   /* MOBILE */
@@ -57,3 +62,5 @@
   @media (min-width: 480px) and (max-width: 768px) {
   .ul-menu {width: 100%}
   }
+
+  
