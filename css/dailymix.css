@@ -19,6 +19,15 @@ h1{
 margin-right: auto;
 margin-left: auto;
 }
+.h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 0;
+
+}
 
 .image{
     width: 320px;
@@ -96,4 +105,9 @@ p{
 }
 .imglogo{
     height: 80px;
+}
+.caratula{
+margin-left: 510px;
+margin-top: 100px;
+height: 500px;
 }
