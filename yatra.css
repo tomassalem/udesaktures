@@ -17,6 +17,14 @@ h1{
     text-align: center;
 
 }
+h2{
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
 
 .fotoartista{
     height: 800px;
