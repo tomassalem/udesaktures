@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
+font-family: sans-serif;
 }
 body{
-    font-family: sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../css/Imagenes/rojo.jpg);
@@ -10,7 +10,8 @@ body{
     margin: 0;
 }
 h1{
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     font-weight: bold;
     color: black;
     font-size: 50px;
@@ -25,6 +26,7 @@ margin-left: auto;
     height: 200px;
 }
 h3{
+    
 font-weight: bold;
 font-size: xx-large;
 color:cornsilk ;
