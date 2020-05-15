@@ -29,6 +29,7 @@ font-weight: bold;
 font-size: x-large;
 color:cornsilk ;
 text-align: center;
+text-decoration: none;
 
 }
 h4{
@@ -77,6 +78,7 @@ h4{
     margin-right: auto;
     margin-left: auto;
     display: block;
+    margin-top: 100px;
 }
 footer{
          width: 100%;
