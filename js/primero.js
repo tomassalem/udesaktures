@@ -3,6 +3,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
         return respuesta.json();
     })
     .then(function(datos){
+        console.log (datos)
         let albums = datos.albums.data;
         console.log(albums)
         let albumsContenedor = document.querySelector('#albumesjs');
@@ -28,7 +29,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
         for (const trackslista of tracks) {
             tracksContenedor.innerHTML += `<div>
             <a href="dailymix.html">
-            <img class="imagen" src="${trackslista.preview}" alt=""></a>
+            <img class="imagen" src="${trackslista.album.cover_big}" alt=""></a>
             <h4>${trackslista.title}</h4>
             </div>`
             
