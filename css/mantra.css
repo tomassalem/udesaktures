@@ -66,8 +66,8 @@ li{
     
 }
 .imagen {
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 .logo {
     width: 200px;
@@ -99,6 +99,14 @@ p{
 }
 .contenedor-artistas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     width: 100%;
+    gap: 20px;
+
+    padding-top: 30px;
+}
+.textomantra{
+    text-align: center;
+    color: white;
 }

@@ -15,17 +15,14 @@ var detalleId = objetoQuery.get('id');
     .then(function(datos){
         console.log (datos)
         let artistas = datos
-        let artistasContenedor = document.querySelector ('#detalleartistajs');
+        let artistasContenedor = document.querySelector ('#detalleart');
             artistasContenedor.innerHTML +=  
-            `    
+            `    <div>
+            <img class="fotoartista" src="${datos.picture_big}" alt="">
+        </div> 
             <h1>${datos.name}</h1>
             <h2>Seguidores: ${datos.nb_fan} - Número de álbumes: ${datos.nb_album}</h2>
-        <div>
-            <img class="fotoartista" src="${datos.picture_big}" alt="">
-        </div>
-        
-
-            `
+        `
             
         
 
@@ -43,17 +40,11 @@ var detalleId = objetoQuery.get('id');
         for (const albumslista of albumsdetalle){
             albumsContenedor.innerHTML +=  
             `
-            <div class="flex">
-                
-                <div class="grid-container">
                     <div>
                         <img class="imagen" src="${albumslista.cover_big}" alt="">
-                        <h4>${albumslista.title} <br>${albumslista.fans} Fans</h4>
-                    </div>
-                </div>
-            `
+                        <h4>${albumslista.title} <br>${albumslista.fans} Likes</h4>
+                    </div>`
         }
-        
 
 
     })
