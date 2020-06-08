@@ -11,7 +11,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre')
             contenedorGeneros.innerHTML+=  
             `
         <div>
-            <a href="Mantra.html?id=${genero.id}"><img class="imagen" src="${genero.picture_big}"></a>
+            <a href="detallegeneros.html?id=${genero.id}"><img class="imagen" src="${genero.picture_big}"></a>
             <h4>${genero.name}</h4>
         </div>
             `

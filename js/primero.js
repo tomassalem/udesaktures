@@ -9,7 +9,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
         let albumsContenedor = document.querySelector('#albumesjs');
         for (const albumlista of albums){
             albumsContenedor.innerHTML += ` <div>
-            <a href="mantra.html">
+            <a href="detallealbum.html?id=${albumlista.id}">
             <img class="imagen" src="${albumlista.cover_xl}" alt=""></a>
             <h4>${albumlista.title}</h4>
         </div>`
