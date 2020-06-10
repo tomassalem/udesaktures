@@ -19,7 +19,7 @@
                 <img class="imagen" src="${tracks.album.cover_big}">
                 <h1 class="h1">${tracks.title}</h1>
                 <h2> Publicado el ${tracks.release_date}</h2> 
-                <audio src="${tracks.preview}"></audio>
+                <audio src="${tracks.preview}" controls></audio>
                 
                 `
             
