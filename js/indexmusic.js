@@ -28,7 +28,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
         let tracksContenedor = document.querySelector ('#tracksjs');
         for (const trackslista of tracks) {
             tracksContenedor.innerHTML += `<div>
-            <a href="dailymix.html">
+            <a href="detalletracks.html?id=${trackslista.id}">
             <img class="imagen" src="${trackslista.album.cover_big}" alt=""></a>
             <h4>${trackslista.title}</h4>
             </div>`
