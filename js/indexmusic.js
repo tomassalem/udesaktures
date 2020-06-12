@@ -4,6 +4,9 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
     })
     .then(function(datos){
         console.log (datos)
+
+        let contador = 0
+
         let albums = datos.albums.data;
         console.log(albums)
         let albumsContenedor = document.querySelector('#albumesjs');
@@ -13,7 +16,16 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
             <img class="imagen" src="${albumlista.cover_xl}" alt=""></a>
             <h4>${albumlista.title}</h4>
         </div>`
+        
+        contador = contador + 1
+
+        
+        if(contador == 6){
+            break;
+        };
             }
+         contador = 0
+
         let artistas = datos.artists.data;
         let artistasContenedor = document.querySelector ('#artistasjs');
         for (const artistaslista of artistas) {
@@ -23,8 +35,18 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
             <h4>${artistaslista.name}</h4>
             </div>`
             
+            contador = contador + 1
+
+        
+        if(contador == 6){
+            break;
+        };
         }
+        
+
         let tracks = datos.tracks.data;
+        contador = 0
+
         let tracksContenedor = document.querySelector ('#tracksjs');
         for (const trackslista of tracks) {
             tracksContenedor.innerHTML += `<div>
@@ -32,8 +54,13 @@ fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0')
             <img class="imagen" src="${trackslista.album.cover_big}" alt=""></a>
             <h4>${trackslista.title}</h4>
             </div>`
-            
+            contador = contador + 1
+
+            if(contador == 6){
+                break;
+            }; 
         }
+
     })
         .catch(function(error){
             console.error(error);

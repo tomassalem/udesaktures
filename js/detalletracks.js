@@ -15,13 +15,26 @@
             let tracks = datos
             let tracksContenedor = document.querySelector ('.grid-container');
                 tracksContenedor.innerHTML =  
-                `  
+                ` <div class='primero'>
                 <img class="imagen" src="${tracks.album.cover_big}">
-                <h1 class="h1">${tracks.title}</h1>
-                <h2>${tracks.album.title}</h2>
-                <h3> El nombre del autor es ${tracks.artist.name}</h3> 
-                <audio src="${tracks.preview}"controls></audio>
                 
+                </div>
+                <div  class='nombres'>
+                <h1>Canción</h1>
+                <h1>Álbum</h2>
+                <h1>Cantante</h3> 
+                <h1>Preview</h4>
+                <h1></h1>
+                </div>
+                <div  class='audio'>
+                <h2>${tracks.title}</h1>
+                <h2>${tracks.album.title}</h2>
+                <h2> ${tracks.artist.name}</h3> 
+                <audio src="${tracks.preview}"controls></audio>
+                <button id='boton'>Agregar a playlist</button>
+
+
+                </div>
                 `
             
         })

@@ -3,6 +3,7 @@
 
 
 }
+
 body{
     font-family: sans-serif;
     background-size: cover;
@@ -95,26 +96,29 @@ h4{
     display: block;
     margin-top: 100px;
 }
+
 footer{
-         width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: cornsilk;
-        padding-top: 25px;
-        padding-bottom: 0px;
-        font-weight: normal;
- }
+    display: inline-flex ;
+    padding: 6px;
+    color: cornsilk;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 30px;
+}
 p{
     padding-top: 80px;
     
 }
 .deezer{
-    height: 100px;
+    width: 700px;
+
     margin-bottom: 20px;
 }
 .imglogo{
     height: 80px;
+}
+.lista{
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -126,6 +130,7 @@ p{
         color: cornsilk;
     padding-left: 0px;
         font-weight: normal;
+        font-size: medium;
     }
     .grid-container{
         margin-left: auto;
@@ -146,12 +151,10 @@ p{
         margin-right: auto;
         margin-left: auto;
     }
-    .deezer{
-        width: 150px;
-    }
+
     .imglogo {
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
     .logo{
         width: 100px;
@@ -159,6 +162,11 @@ p{
         margin-top: 20px;
     }
     .imagen{
-        width: 180px;
+        width: 170px;
     }
+    .deezer{
+        width: 150px ;
+        height: 50px;
+    }
+    
   }

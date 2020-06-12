@@ -5,15 +5,17 @@ let queryString = window.location.search
 let objetoQuery = new URLSearchParams(queryString);
 
 //ahora si obtengo el id del album
-var generoId = objetoQuery.get('id');
+var resultado = objetoQuery.get('Buscador');
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+generoId+"/artists")
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q="+resultado)
     .then(function(respuesta){
         return respuesta.json();
     })
     .then(function(datos){
         console.log (datos)
+
         let contador = 0
+
         let artistasgeneros= datos.data
         let contenedorArtistas= document.querySelector ('.contenedor-artistas')
 
@@ -21,18 +23,17 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
             contenedorArtistas.innerHTML+=  
             `
     <div>
-            <a href="BadBunny.html?id=${artista.id}">
-            <img class="imagen" src="${artista.picture_big}" alt=""></a>
-            <h4>${artista.name}</h4>
+            <a href="detalletracks.html?id=${artista.id}">
+            <img class="imagen" src="${artista.album.cover_big}" alt=""></a>
+            <h4>${artista.title}</h4>
             </div>
             `
             contador = contador + 1
 
-        
-                    if(contador == 6){
-                        break;
-                    };
-            
+            if(contador == 6){
+                break;
+            };
+
         } 
 
 
