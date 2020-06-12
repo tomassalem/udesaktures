@@ -55,6 +55,15 @@ h4{
             height: 180px;
             border-radius: 50%;
         }
+        .grid-container{
+            display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+   background-color: rgba(70, 66, 66, 0.4);
+    padding-top: 30px;
+        }
 }
 
 .bold {
@@ -107,3 +116,49 @@ p{
 .imglogo{
     height: 80px;
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: cornsilk;
+    padding-left: 0px;
+        font-weight: normal;
+    }
+    .grid-container{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    background-color: rgba(70, 66, 66, 0.4);
+    padding-top: 30px;
+    }
+    h1{
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 30px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .deezer{
+        width: 150px;
+    }
+    .imglogo {
+    width: 50px;
+    height: 50px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    .imagen{
+        width: 180px;
+    }
+  }
