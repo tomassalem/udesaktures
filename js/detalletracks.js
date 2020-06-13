@@ -36,5 +36,22 @@
                 <button id='boton'>Agregar a playlist</button>
                 </div>
                 `
-            
+        let tracklist = [tracks]
+        let agregar = document.querySelector('#boton')
+        agregar.onclick = function (){
+            if (window.localStorage.getItem("playlist") === null){
+
+                window.localStorage.setItem("playlist", JSON.stringify(tracklist))
+                
+            }else{
+                let cancionjson = JSON.parse(window.localStorage.getItem("playlist"))
+                
+                cancionjson.push(tracks)
+        
+                window.localStorage.setItem("playlist", JSON.stringify(cancionjson))
+                
+                console.log(cancionjson);
+                
+            }
+        }    
         })
