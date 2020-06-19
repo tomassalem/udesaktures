@@ -20,7 +20,9 @@ h1{
 margin-right: auto;
 margin-left: auto;
 }
-
+.lista{
+    list-style-type: none;
+}
 .image{
     width: 320px;
     height: 200px;
@@ -153,6 +155,7 @@ p{
     .deezer{
         width: 150px ;
         height: 50px;
+        margin-top: 20px;
     }
     
   }

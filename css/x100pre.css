@@ -29,6 +29,9 @@ ol{
 li{
     font-size: 25px;
 }
+.lista{
+    list-style-type: none;
+}
 .image{
     width: 320px;
     height: 200px;

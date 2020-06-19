@@ -24,6 +24,9 @@ margin-left: auto;
     width: 320px;
     height: 200px;
 }
+.lista{
+    list-style-type: none;
+}
 h3{
 font-weight: bold;
 font-size: xx-large;
@@ -115,6 +118,9 @@ p{
     padding-left: 0px;
         font-weight: normal;
         font-size: medium;
+    }
+    .lista{
+        list-style-type: none;
     }
     .grid-container{
         margin-left: auto;

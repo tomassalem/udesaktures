@@ -91,6 +91,9 @@ p{
     padding-top: 80px;
     
 }
+.lista{
+    list-style-type: none;
+}
 .deezer{
     height: 100px;
     margin-bottom: 0px;

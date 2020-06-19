@@ -31,6 +31,9 @@ h2{
     height: 800px;
 
 }
+.lista{
+    list-style-type: none;
+}
 
 .image{
     width: 320px;

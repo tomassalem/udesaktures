@@ -19,6 +19,9 @@ h1{
 margin-right: auto;
 margin-left: auto;
 }
+.lista{
+    list-style-type: none;
+}
 
 .image{
     width: 320px;
