@@ -1,0 +1,335 @@
+.* {
+    box-sizing: border-box;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+  }
+  
+  .fa {font-size:50px;}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+  *{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../imagenes/rojo.jpg");
+    padding: 0;
+    margin: 0;
+}
+.centro{
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    color: cornsilk;
+    font-size: 70px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2{
+    color: cornsilk;
+    font-size: 35px;
+}
+ol{
+    color: white;
+}
+#buscador{
+    margin-left: 90px;
+}
+li{
+    font-size: 25px;
+}
+h4{
+    color: cornsilk;
+}
+.image{
+    width: 320px;
+    height: 200px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  #nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+@media (max-width: 480px) {
+     .image{
+         width: 100px;
+         height: 80px;
+         border-radius: 50%;
+     }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+        .image{
+            width: 240px;
+            height: 180px;
+            border-radius: 50%;
+        }
+}
+
+.bold {
+    font-size: x-large;
+    text-align: center;
+    color: cornsilk;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+   background-color: rgba(70, 66, 66, 0.4);
+    padding-top: 30px;
+    
+}
+.imagen {
+    width: 300px;
+    height: 300px;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+footer{
+         width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: cornsilk;
+        padding-top: 25px;
+        padding-bottom: 0px;
+        font-weight: normal;
+ }
+p{
+    padding-top: 80px;
+    
+}
+.deezer{
+    height: 100px;
+    margin-bottom: 0px;
+}
+.imglogo{
+    height: 80px;
+}
+.contenedor-artistas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+    gap: 20px;
+
+    padding-top: 30px;
+}
+.textomantra{
+    text-align: center;
+    color: white;
+}
+.lista{
+    list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: cornsilk;
+    padding-left: 0px;
+        font-weight: normal;
+        font-size: medium;
+    }
+    .contenedor-artistas{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    background-color: rgba(70, 66, 66, 0.4);
+    padding-top: 30px;
+    }
+    h1{
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+
+        font-size: 30px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .lista{
+        font-size: 10px;
+    }
+
+    .imglogo {
+        width: 50px;
+        height: 50px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    .imagen{
+        width: 170px;
+        height: 170px;
+    }
+    .deezer{
+        width: 150px ;
+        height: 50px;
+    }
+    #nosotros{
+        display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+    }
+
+}
