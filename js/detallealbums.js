@@ -18,7 +18,7 @@
                 `  
                 <img class="imagen" src="${albums.cover_big}">
                 <h1 class="h1">${albums.title}</h1>
-                <a href="BadBunny.html?id=${albums.artist.id}" class="editarcolor" >${albums.artist.name}</a>
+                <a href="detalleartistas.html?id=${albums.artist.id}" class="editarcolor" >${albums.artist.name}</a>
                 <h2> Publicado el ${albums.release_date}</h2> 
                 
                 `

@@ -21,7 +21,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
             contenedorArtistas.innerHTML+=  
             `
     <div>
-            <a href="BadBunny.html?id=${artista.id}">
+            <a href="detalleartistas.html?id=${artista.id}">
             <img class="imagen" src="${artista.picture_big}" alt=""></a>
             <h4>${artista.name}</h4>
             </div>
